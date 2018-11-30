@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Production including j Query</title>
+
+    <!-- Including using the Minimfied version -->
+    <script src="../../jQueryLibrary/jquery-3.3.1.min.js"></script>
+
+    Live Links
+
+    Google CDN
+    <script src="http://ajax.googleapis.cpm/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="http://ajax.googleapis.cpm/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h2>Jquery Syntax</h2>
+
+    <p>with Ready function
+        <br>
+        $(document).ready(function(){
+        // jquery methods go here
+        });
+    </p>
+
+
+    <p>without Ready function
+        <br>
+        $(function(){
+        // jquery methods go here
+        });
+    </p>
+
+
+    <h2>Jquery Selectors</h2>
+
+    <h3> The element Slector</h3>
+    <p>
+
+        $(document).ready(function(){
+
+        $("button").click(function(){
+        $("p").hide();
+        })
+        });
+    </p>
+
+    <br>
+    <h3> The #id Slector</h3>
+    <p>
+
+        $(document).ready(function(){
+
+        $("button").click(function(){
+        $("#demo").hide();
+        })
+        });
+    </p>
+
+    <h3> The class Slector</h3>
+    <p>
+
+        $(document).ready(function(){
+
+        $("button").click(function(){
+        $(".demo").hide();
+        })
+        });
+    </p>
+
+    <h3> The * Slector</h3>
+    <p>
+
+        $(document).ready(function(){
+
+        $("button").click(function(){
+        $("*").hide();
+        })
+        });
+    </p>
+
+    <h2>Jquery Event Methods</h2>
+
+    <table style="border: 1px solid grey">
+
+        <th style="border: 1px solid red">
+            Mouse Events
+        </th>
+
+        <th style="border: 1px solid red">
+            KeyBoard Events
+        </th>
+
+        <th style="border: 1px solid red">
+            Form Events
+        </th>
+
+        <th style="border: 1px solid red">
+            Document Events
+        </th>
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">click</td>
+            <td style="border: 1px solid green">keypress</td>
+            <td style="border: 1px solid green">submit</td>
+            <td style="border: 1px solid green">load</td>
+        </tr>
+
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">dbclick</td>
+            <td style="border: 1px solid green">keydown</td>
+            <td style="border: 1px solid green">change</td>
+            <td style="border: 1px solid green">resize</td>
+        </tr>
+
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">mouseenter</td>
+            <td style="border: 1px solid green">keyup</td>
+            <td style="border: 1px solid green">focus</td>
+            <td style="border: 1px solid green">scroll</td>
+        </tr>
+
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">mouseleave</td>
+            <td style="border: 1px solid green"></td>
+            <td style="border: 1px solid green">blur</td>
+            <td style="border: 1px solid green">unload</td>
+        </tr>
+
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">mousedown</td>
+
+        </tr>
+
+        <tr style="border: 1px solid red">
+            <td style="border: 1px solid green">mouseup</td>
+        </tr>
+
+    </table>
+    <h2>Mouse Events</h2>
+
+    <ol>click()</ol>
+
+    <li>
+        $("button").click(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+
+    <ol>dbclick()</ol>
+
+    <li>
+        $("button").dbclick(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+    <ol>mouseenter()</ol>
+
+    <li>
+        $("p").mouseenter(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+
+    <ol>mouseleave()</ol>
+
+    <li>
+        $("p").mouseleave(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+
+
+    <ol>mousedown()</ol>
+
+    <li>
+        $("p").mousedown(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+
+
+    <ol>mouseup()</ol>
+
+    <li>
+        $("p").mouseup(function(){
+        // action goes here
+        });
+
+    </li>
+
+    <br>
+
+    <ol>hover()</ol>
+
+    <li>
+        $("p").hover(function(){
+        alert("You entered");
+        },
+        function(){
+        alert("You leave");
+        }
+        });
+
+    </li>
+
+    <br>
+
+    <h2> KeyBoard Events</h2>
+
+    <ol>keypress()</ol>
+    <li>
+        $("input").keypress(function(){
+
+        // action goes here
+        });
+    </li>
+
+    <ol>keydown()</ol>
+    <li>
+        $("input").keydown(function(){
+
+        // action goes here
+        });
+    </li>
+
+    <ol>keyup()</ol>
+    <li>
+        $("input").keyup(function(){
+
+        // action goes here
+        });
+    </li>
+
+    <br>
+
+    <h2> KeyBoard Events</h2>
+
+    <ol>keypress()</ol>
+    <li>
+        $("input").keypress(function(){
+
+        // action goes here
+        });
+    </li>
+
+    <ol>keydown()</ol>
+    <li>
+        $("input").keydown(function(){
+
+        // action goes here
+        });
+    </li>
+
+    <ol>keyup()</ol>
+    <li>
+        $("input").keyup(function(){
+
+        // action goes here
+        });
+    </li>
+
+
+
+    <br>
+
+    <h2> Form Events</h2>
+
+    <ol>submit()</ol>
+    <li>
+        $("form").submit(function(){
+
+        alert("hello");
+        });
+    </li>
+
+
+    <ol>change()</ol>
+    <li>
+        $("input").change(function(){
+
+        alert("hello");
+        });
+    </li>
+
+    <ol>focus()</ol>
+    <li>
+        $("input").focus(function(){
+
+        alert("hello");
+        });
+    </li>
+
+
+    <ol>blur()</ol>
+    <li>
+        $("input").blur(function(){
+
+        alert("hello");
+        });
+    </li>
+
+    <h2> Document / Window Events </h2>
+
+    <ol>load() --> powerful AJAX Method
+        <li>$("div").load("samlple.txt")</li>
+    </ol>
+    <ol>resize()
+        <li>$("window").resize(function(){
+
+            alert("hello");
+            });
+        </li>
+    </ol>
+
+    <ol>scroll()
+        <li>$("window").scroll(function(){
+
+            alert("hello");
+            });
+        </li>
+    </ol>
+
+
+
+
+
+</body>
+
+</html>
